@@ -226,11 +226,18 @@ width: 63%;
  font-weight: bold;
  font-size: 18px;
  color: rgb(41, 36, 36);
- text-align: center;
+ text-align: justify;
  margin-left: 10%;
  margin-right: 10%;
  line-height: 30px;
  
+}
+
+@media (max-width:700px)
+{
+.introduction {
+ text-align:left;
+ }
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/
