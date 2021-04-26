@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+<link rel="shortcut icon" href="https://image.flaticon.com/icons/png/512/21/21645.png" type="images/png">
+<link rel="stylesheet" href="css/styles.css">
+
+<title>Sauvez Un Animal</title>
+   
+</head>
+<body>
+
+<!------------------------------------------NAV&SEARCH_BAR-------------------------------------->
+
+<nav class="navbar">
+<div class="logo">
+<img src="https://www.cdafc.org/wp-content/uploads/2018/10/CDAFC-Dog-Cat-Logo-e1540407791560.png" width="70px" height="55px">
+</div>
+
+    <div class="search">
+      <input type="text" class="search__input" aria-label="search" placeholder="Recherche...">
+      <button class="search__submit" aria-label="submit search" onclick="openPage()"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+
+<a href="#" class="toggle-button">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+
+</a>
+<div class="navbar-links">
+<ul>
+<li><a href="#">L'association</a></li>
+<li><a href="#">L'actualité</a></li>
+<li><a href="#">Adopter</a></li>
+<li><a href="#">Donation</a></li>
+<li><a href="#">Agissons</a></li>
+</ul>
+</div>
+</nav>
+
+<!-------------------------------------------PRESENTATION-------------------------------------->
+
+<header>
+
+<div class="container">
+<div class="title">
+<h1>Offrez-leur une chance</h1>
+</div>
+
+<div class="introduction">
+<p>Un groupe de personnes sensibles à la cause animale, qui veulent agir,souhaitent le changement, et 
+l'amélioration de la condition des animaux en algérie.
+
+l'objectif principal est la protection des animaux et regroupe : Information - Sensibilisation - Sauvetages 
+et assistance aux animaux en danger - Vaccinations / Stérilisations - Publications d'annonces - Entraides et Partages.
+
+Nous menons des actions contre el galoufa (la fourrière Algérienne).
+
+Soyez nombreux à nous suivre et à partager afin qu'on puisse réaliser ensemble de grandes choses pour 
+ces êtres sans voix ! 
+</p>
+</div>
+</div>
+</header>
+
+<!-------------------------------------------LISTE_DES_ANIMAUX---------------------------------->
+
+<main>
+
+<section class="listing">
+  
+  <div class="title"><h2>14 ANIMAUX à l'adoption actuellement</h2></div>
+
+<div class="carousel-container">
+  <div class="carousel-inner">
+    <div class="track">
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="http://www.blog-trotteur.com/wp-content/uploads/2019/12/Adopter-tortue-de-jardin.jpg" alt="tortue" onclick="handlers.open('1')"  ></div>
+          <div class="info">
+           Tortue Géniale
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://i.pinimg.com/originals/05/a4/b4/05a4b4ea924f03af8c83c5cb18f8d0f2.jpg" alt="chien" onclick="handlers.open('2')" ></div>
+          <div class="info">
+            Walid
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://www.wanimo.com/veterinaire/wp-content/uploads/2015/07/images_articles_lapin_2lapins-sur-serviette-rouge.JPG" alt="lapins" onclick="handlers.open('3')"></div>
+          <div class="info">
+            Rick & Morty
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://i.pinimg.com/564x/06/7d/f9/067df9b3258b411f19a07d4b34c76018.jpg" alt="chat" onclick="handlers.open('4')"  ></div>
+          <div class="info">
+            Nigrou
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://petsitting.fr/wp-content/uploads/2014/05/lechat015zu5.jpg" alt="chat" onclick="handlers.open('5')" ></div>
+          <div class="info">
+            Caramel
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://static.mmzstatic.com/wp-content/uploads/2013/09/lapin1.jpg" alt="lapin" onclick="handlers.open('6')" ></div>
+          <div class="info">
+            Gnina
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://geo.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fgeo.2F2019.2F10.2F28.2Fc9c8ea2c-9750-4039-97c1-ce9f592f4ef4.2Ejpeg/1120x630/background-color/ffffff/quality/90/des-chiens-renifleurs-decouvrent-des-sepultures-vieilles-de-3000-ans-en-croatie.jpg" alt="Chien" onclick="handlers.open('7')" ></div>
+          <div class="info">
+            Rex
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Dalmatiner-Rex_Kaninchen.jpg" alt="Lapin" onclick="handlers.open('8')" ></div>
+          <div class="info">
+            Condia
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://lemagdesanimaux.ouest-france.fr/images/dossiers/2019-01/mini/tortues-111106-650-400.jpg" alt="tortue" onclick="handlers.open('9')"  ></div>
+          <div class="info">
+            Franklin & kévin
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://www.leparisien.fr/resizer/dxeKDoZ9oIMydrKE4h3nzeFb0CM=/932x582/cloudfront-eu-central-1.images.arcpublishing.com/leparisien/KIOHEM7YJBRED3P2P5FBOREIIM.jpg" alt="chat" onclick="handlers.open('10')" ></div>
+          <div class="info">
+            Pitchitchi
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://www.selection.ca/wp-content/uploads/2020/12/races-de-chiens-chiots-animaux-Berger-allemand.jpg" alt="chien" onclick="handlers.open('11')" ></div>
+          <div class="info">
+            Ghost
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://resize.prod.docfr.doc-media.fr/img/var/doctissimo/storage/images/media/images/fr/www/chat-ne-mange-plus/7883963-1-fre-FR/chat-ne-mange-plus.jpg" alt="chat" onclick="handlers.open('12')" ></div>
+          <div class="info">
+            Rouji
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://i.pinimg.com/736x/ee/7d/3a/ee7d3a681c87530f7c320dfe5d2bb715.jpg" alt="chien"onclick="handlers.open('13')"  ></div>
+          <div class="info">
+            Klebs
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <div class="img"><img src="https://petsitting.fr/wp-content/uploads/2011/12/adopter-un-lapin.jpg" alt="lapin" onclick="handlers.open('14')" ></div>
+          <div class="info">
+            Tibère
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modalHolder"></div>
+  
+  <div class="nav">
+    <button class="prev">
+      <i class="material-icons">
+      keyboard_arrow_left
+      </i>
+    </button>
+    <button class="next">
+      <i class="material-icons">
+      keyboard_arrow_right
+      </i>
+    </button>
+  </div>
+</div>
+
+</section>
+
+<!---------------------------------------------LES_CHOIX----------------------------------------->
+
+   <section class="selections">
+
+<div class="dropdown_select">
+
+  <div class="select-box">
+
+    <div class="options-container">
+    
+      <div class="option">
+        <input type="radio" class="radio" id="turtle"  />
+        <label for="turtle">Tortue</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" class="radio" id="dog"  />
+        <label for="dog">Chien</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" class="radio" id="cat"  />
+        <label for="cat">Chat</label>
+      </div>
+
+      <div class="option">
+        <input type="radio" class="radio" id="rabbit"  />
+        <label for="rabbit">Lapin</label>
+      </div>
+    </div>
+
+    <div class="selected">
+      Choisissez l'animal 
+    </div>
+  </div>
+</div>                     
+
+<h3>veuillez selectionner l'âge de l'animal :</h3>
+<div class="age">
+  
+<div class="content">
+<div id="my-slider" se-min="0" se-step="0.5" se-min-value="0" se-max-value="16" se-max="16" class="slider">
+ <div class="slider-touch-left">
+   <span></span>
+ </div>
+ <div class="slider-touch-right">
+   <span></span>
+ </div>
+ <div class="slider-line">
+   <span></span>
+ </div>
+</div>
+</div>
+<div id="result">Min: 0 Max: 16</div>
+</div>
+   </section>
+
+<!-------------------------------------------FORMULAIRE------------------------------------------>
+
+<section class="form_wrapper">
+  <div class="form_container">
+<div class="title_container">
+  <h3>Veuillez entrer vos coordonnées afin que nous puissions vous contacter</h3>
+ 
+</div>
+<form>
+  <div class="row clearfix">
+<div class="col_half">
+  <label>Nom</label>
+  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+<input type="text" name="first_name" placeholder="..." />
+  </div>
+</div>
+<div class="col_half">
+  <label>Prénom</label>
+  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+<input type="text" name="last_name" placeholder="..." />
+  </div>
+</div>
+  </div>
+  <div class="row clearfix">
+<div class="col_half">
+  <label>Email</label>
+  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+<input type="email" name="email" placeholder="..." />
+  </div>
+</div>
+<div class="col_half">
+  <label>Phone</label>
+  <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
+<input type="tel" name="phone" placeholder="+213" pattern="[0-9]{10}" />
+  </div>
+</div>
+  </div>
+  <div class="row clearfix">
+<div>
+  <label>Commentaire</label>
+  <div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
+<textarea cols="46" rows="3" name="comments" ></textarea>
+  </div>
+   </div>
+  </div>
+  <input class="button" type="submit" value="Envoyer" />
+</form>
+  </div>
+   
+</section>
+
+</main>
+
+<!----------------------------------------------FOOTER------------------------------------------->
+
+<footer>
+
+  <div class="container_footer">
+    <div class="sec aboutus">
+      
+
+      <h2>Que faisons-nous </h2>
+      
+<p>Nous sommes une société œuvrant dans le domaine de la protection animale, 
+  Nous agissons pour assurer la protection et la défense des animaux en algérie,
+  Pour plus d'informations n'hésitez pas à nous contacter, à bientôt ❤️ !
+</p>
+
+    <ul class="sci">
+  <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+  <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+  <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+  <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+      
+      </ul>
+  </div>
+<div class="sec quickLinks">
+<h2>Informations</h2>
+<ul>
+<li><a href ="#">News</a></li>
+<li><a href ="#">FAQ</a></li>
+<li><a href ="#">Refuge</a></li>
+<li><a href ="#">Termes & Conditions</a></li>
+<li><a href ="#">Contact</a></li>
+</ul>
+  </div>
+
+<div class="sec contact">
+<h2>Info Contact</h2>
+    <ul class="info">
+  <li>
+<span><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span>
+<span>16000 Alger <br>Ben Aknoun Street<br>Algérie</span>
+</li>
+
+<li>
+<span><i class="fas fa-phone-alt" aria-hidden="true"></i></span>
+<p><a href="tel:0557390156">+213 557 390 156</a><br>
+    <a href="tel:023384250">+213 23 38 42 50</a></p>
+    </li>
+    <li>
+<span><i class="far fa-envelope" aria-hidden="true"></i></span>
+<p><a href="mailto:narichabiraya@gmail.com">narichabiraya@gmail.com</a></p>
+    </li>
+   </ul>
+  </div>
+</div>
+
+</footer>
+
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
