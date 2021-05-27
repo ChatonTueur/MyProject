@@ -353,4 +353,71 @@ document.getElementById('result').innerHTML = 'Min: ' + min + ' Max: ' + max;
 console.log(min,max, this);
 document.getElementById('result').innerHTML = 'Min: ' + min + ' Max: ' + max;
   }
+ function validateEmail() {
+    let emailTextBox = document.getElementById("email");
+    let email = emailTextBox.value;
+    let emailRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+    emailTextBox.style.color = "white";
+    if(emailRegex.test(email)) {
+      emailTextBox.style.backgroundColor = "green";
+    }
+    else {
+      emailTextBox.style.backgroundColor = "red";
+    }
+  }
+  
+  function validateFirstName(name) {
+    let control = document.getElementById("first_name");
+    control.style.color = "white";
+
+    if(control.value == "") {
+      control.style.background = "red";
+    }
+    else if(Number(control.value)) {
+      control.style.background = "red";
+    }
+    else {
+      control.style.background = "green";
+    }
+  }
+
+ 
+ 
+  function validateLastName(name) {
+    let control = document.getElementById("last_name");
+    control.style.color = "white";
+
+    if(control.value == "") {
+      control.style.background = "red";
+    }
+    else if(Number(control.value)) {
+      control.style.background = "red";
+    }
+    else {
+      control.style.background = "green";
+    }
+  }
+
+ function validatePhone() {
+
+  let phoneNumber = document.getElementById("phone");
+  let reg=  /^(00213|\+213|0)(5|6|7)[0-9]{8}$/;
+  
+  phoneNumber.style.color = "white";
+  if
+  (phoneNumber.value == reg)
+   {
+    phoneNumber.style.background = "green";
+  }
+  else {
+    phoneNumber.style.background = "red";
+   
+  }
+}
+
+ function myFunction() {
+  alert("Nous vous remercions de l'intérêt porté à notre association, nous vous contacterons dans les plus brefs délais 😄 ");
+}
   
