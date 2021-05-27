@@ -298,13 +298,13 @@ ces êtres sans voix !
 <div class="col_half">
   <label>Nom</label>
   <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-<input type="text" name="first_name" placeholder="..." />
+<input type="text" id="first_name" placeholder="Chaton" onkeyup="validateFirstName('name')" onblur="validateFirstName('name')">
   </div>
 </div>
 <div class="col_half">
   <label>Prénom</label>
   <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-<input type="text" name="last_name" placeholder="..." />
+<input type="text" id="last_name" placeholder="Tueur" onkeyup="validateLastName('name')" onblur="validateLastName('name')"> 
   </div>
 </div>
   </div>
@@ -312,13 +312,14 @@ ces êtres sans voix !
 <div class="col_half">
   <label>Email</label>
   <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-<input type="email" name="email" placeholder="..." />
+<input type="email" id="email" placeholder="ChatonTueur@gmail.com" onkeyup="validateEmail()" onblur="validateEmail()">
   </div>
+  <div id="response"></div>
 </div>
 <div class="col_half">
   <label>Phone</label>
   <div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
-<input type="tel" name="phone" placeholder="+213" pattern="[0-9]{10}" />
+<input type="tel"  id="phone" placeholder="+213"  onkeyup="validatePhone()" onblur="validatePhone()">
   </div>
 </div>
   </div>
@@ -326,13 +327,14 @@ ces êtres sans voix !
 <div>
   <label>Commentaire</label>
   <div class="textarea_field"> <span><i aria-hidden="true" class="fa fa-comment"></i></span>
-<textarea cols="46" rows="3" name="comments" ></textarea>
+<textarea cols="46" rows="3" id="comments" ></textarea>
   </div>
    </div>
   </div>
-  <input class="button" type="submit" value="Envoyer" />
+  <input class="button" id="submit"  type="submit" value="Envoyer" onclick="myFunction()" >
 </form>
   </div>
+   
    
 </section>
 
