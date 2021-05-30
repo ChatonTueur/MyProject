@@ -514,6 +514,7 @@ margin-bottom: 8px;
 color: #f5f6fa;
 position: relative;
 order: 0;
+text-align:center;
 }
 
 .selected::after {
