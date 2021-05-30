@@ -323,28 +323,21 @@ position: relative;
 cursor: pointer;
 }
 
-
-/*@media screen and (max-width: 500px) {
-
-    #my-slider {
-    display: ;        
-     
-    }
-    #result
-    {
-    
-        
-    }
-    
-    
-    }*/
-
+@media (max-width: 600px) 
+{
+.slider
+{
+margin-left: 0%;
+margin-right:500px;
+}
+}
 
 @media screen and (max-width: 768px) {
 .carousel-container {
 width: 80%;
 
 }
+
 }
 
 @media screen and (max-width: 1280px) {
